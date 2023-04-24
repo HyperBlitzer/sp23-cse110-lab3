@@ -4,29 +4,35 @@
         <meta charset="UTF-8">
         <title>Cereal Meeting Minutes</title>
         <link href="screenshots/cerealbox.ico" rel="icon">
+        <link rel="stylesheet" type="text/css" href="minutestyle.css">
     </head>
     <body>
         <header>
-            <h1>"What is the Best Cereal" Meeting</h1>
-            <h2>Ranking Cereals in a Tier List</h2>
+            <h1 color="#f0f8ff">"What is the Best Cereal" Meeting</h1>
+            <h2 class="secheader">Ranking Cereals in a Tier List</h2>
+            <style>
+                .secheader {
+                    background-color:pink;
+                }
+            </style>
             <h3>12 April 2023</h3>
             <hr>
         </header>
 
         <nav>
-            <ol>
-                <li><a href="#attend-list">Attendance List</a></li>
-                <li><a href="#u-business">Meeting Business</a></li>
-                <li><a href="#tier-list">Tier List</a></li>
-                <li><a href="#form-stuff">Form Stuff</a></li>
+            <ol id="linkto">
+                <li><a href="#attend-list" class="links">Attendance List</a></li>
+                <li><a href="#u-business" class="links">Meeting Business</a></li>
+                <li><a href="#tier-list" class="links">Tier List</a></li>
+                <li><a href="#form-stuff"class="links">Form Stuff</a></li>
             </ol>
             <hr>
         </nav>
 
         <main>
-            <div class="Attendance List">
+            <div class="AttendanceList">
             <h2 id="attend-list">Attendance List</h2>
-            <ul>
+            <ul class="unordlist">
                 <li>Shaun Lagon</li>
                 <li>Jose Arreguin</li>
                 <li>Antonio Zamora</li>
@@ -41,12 +47,12 @@
                 cereal is ultimately the best 
             </p>
             <p>The cereals we will be ranking are:</p>
-                <p><span>Apple Jacks</span>,<span>Cheerios</span>,
-                    <span>Cinnamon Toast Crunch</span>, <span>Corn Pops</span>,
-                    <span>Frosted Flakes</span>, <span>Froot Loops</span>,
-                    <span>Kix</span>, <span>Lucky Charms</span>,
-                    <span>Fruity Pebbles</span>, <span>Frosted Mini Wheats</span>,
-                    <span>Chex</span>, <span>Coco Puffs</span>, <span>Cookie Crisps</span>
+                <p><span>Apple Jacks</span><span>Cheerios</span>
+                    <span>Cinnamon Toast Crunch</span> <span>Corn Pops</span>
+                    <span>Frosted Flakes</span> <span>Froot Loops</span>
+                    <span>Kix</span> <span>Lucky Charms</span>
+                    <span>Fruity Pebbles</span> <span>Frosted Mini Wheats</span>
+                    <span>Chex</span> <span>Coco Puffs</span><span>Cookie Crisps</span>
                 </p>
                     
                 <details>
@@ -57,12 +63,12 @@
 
             <h3 id="u-business">Unfinished Business from Last meeting</h3>
                 <ul>
-                    <li>Calculate the scores for the top cereals</li>
-                    <li>Discuss the direction of the main project <i>Equionix</i></li>
-                    <li>Discuss the situation with the missing food in the 
+                    <li class="bus">Calculate the scores for the top cereals</li>
+                    <li class="bus">Discuss the direction of the main project <i>Equionix</i></li>
+                    <li class="bus">Discuss the situation with the missing food in the 
                         company fridge</li>
-                    <li>Discuss pay raises</li>
-                    <li>Discuss allegations about the rat infestation</li>
+                    <li class="bus">Discuss pay raises</li>
+                    <li class="bus">Discuss allegations about the rat infestation</li>
                 </ul>
 
             <h3>New Business to be talked about this meeting</h3>
@@ -77,7 +83,7 @@
                 "Can we <em>please</em> get rid of these rats?" - Daniel
             </p>
 
-            <section>
+            <section class="tierList">
                 <h3 id="tier-list">Definitive Tier List</h3>
                 <img src="screenshots/cerealtierlist.png" alt="Tier List of the
                 previously mentioned cereals with Lucky Charms at S and Chex + Kix
@@ -125,7 +131,7 @@
 
 
 
-                <fieldset name="roleselecter">
+                <fieldset id="roleselecter">
                     <legend>Pick your favorite role</legend>
                     <input type="checkbox" id="prompt">
                     <label for="prompt">Do you play Overwatch?</label><br>
@@ -140,7 +146,7 @@
                     <label for="support">Support</label><br>
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="scaminput">
                     <legend>Enter Your Credit Card Number and Birthday</legend>
                     <input type="text" id="ccnumber">
                     <label for="ccnumber">Credit Card Number</label><br>
