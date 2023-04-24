@@ -1,0 +1,105 @@
+body {
+    background-color:gray;
+
+}
+
+h1 {
+    color: blue
+}
+
+.unordlist {
+    text-decoration:underline
+}
+
+.links {
+    color:black
+}
+
+#scaminput #ccnumber {
+    background-color:pink
+}
+
+li:first-of-type + li {
+    color:red
+}
+
+#roleselector {
+    display: flex
+}
+
+span {
+    display: inline-block
+}
+
+h2 ~ h3 {
+    color: whitesmoke
+}
+
+*.tierList {
+    background-color:darkkhaki
+}
+
+p > strong {
+    text-decoration: underline dotted purple
+}
+
+@media (width: 30rem) {
+    nav {
+        background-color:gray;
+    }
+}
+
+.links:hover {
+    color:lightseagreen
+}
+
+/*Entire Attendance List div*/
+.AttendanceList {
+    background-color: hsla(0,0%, 35%, 1);
+    max-width: 15em;
+    min-width: 5em;
+    margin-left:auto;
+    margin-right:auto;
+    position: static;
+
+}
+
+header {
+    background-color: rgb(211, 211, 211);
+    margin-left:auto;
+    margin-right:auto;
+    width: 6in;
+    text-align:center
+}
+
+p span {
+    display: grid;
+    background-color:aquamarine;
+    width: 300px;
+}
+
+footer {
+    background-color:lightblue;
+    position: sticky;
+    bottom: 0cm;
+    border-style:dashed;
+    border-color:khaki;
+    border-radius: 20px;
+    border-width: 0.5lh;
+    height:100px;
+}
+
+button {
+    height: 2rem
+}
+
+button:active {
+    background-color: darkmagenta;
+}
+
+li[class="bus"] {
+    background-color:lightsalmon;
+    display: flex;
+    color:brown;
+    width: 4in
+}
